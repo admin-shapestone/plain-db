@@ -24,6 +24,7 @@ public class RetreiveExample {
       // Open a connection
       try(Connection conn = DriverManager.getConnection(JDBCConstants.DB_URL, JDBCConstants.USER, JDBCConstants.PASS);
          Statement stmt = conn.createStatement();
+//    		  stmt.execute(QUERY);
          ResultSet rs = stmt.executeQuery(QUERY);) {
          // Extract data from result set
          while (rs.next()) {

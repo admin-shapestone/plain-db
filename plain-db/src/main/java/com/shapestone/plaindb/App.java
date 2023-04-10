@@ -19,6 +19,12 @@ public class App {
 			retreiveExample.displayData();
 			break;
 		}
+		
+		case 2: {
+			InsertPrepared insertPrepared = new InsertPrepared();
+			insertPrepared.insertRecord();
+			break;
+		}
 		default:
 			throw new IllegalArgumentException("Unexpected value: " + option);
 		}
